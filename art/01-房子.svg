@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-label="一间亮着灯的房子沉在海底，一条鲸从上方游过">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c3530"/>
+      <stop offset="0.45" stop-color="#071a17"/>
+      <stop offset="1" stop-color="#020a09"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e9c98d" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#e9c98d" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e9c98d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6fe3c4" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6fe3c4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="tiny" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="680" fill="url(#water)"/>
+
+  <!-- 从水面下来的光 -->
+  <g opacity="0.8">
+    <polygon points="150,0 300,0 450,680 280,680" fill="url(#ray)"/>
+    <polygon points="540,0 640,0 720,680 600,680" fill="url(#ray)"/>
+    <polygon points="870,0 960,0 1040,680 930,680" fill="url(#ray)"/>
+  </g>
+
+  <!-- 远处的鲸 -->
+  <g transform="translate(660 170) scale(0.66)" opacity="0.45">
+    <g fill="#6fe3c4">
+      <path d="M0 0 C14 -8 30 -26 52 -38 C80 -54 118 -66 158 -68 C210 -70 262 -52 300 -30 C318 -20 332 -8 340 0
+               C332 8 318 16 300 22 C262 40 216 52 168 52 C120 52 70 44 34 30 C16 22 4 10 0 0 Z"/>
+      <path d="M340 0 C356 -5 382 -13 408 -20 C394 -7 370 0 352 2 C370 5 394 12 408 24 C382 16 356 6 340 0 Z"/>
+    </g>
+    <circle cx="46" cy="-8" r="3.5" fill="#04100e"/>
+  </g>
+
+  <!-- 海床 -->
+  <path d="M0 596 C130 556 214 610 326 584 C438 558 476 614 596 592 C706 572 766 616 886 596 C986 580 1082 612 1200 588 L1200 680 L0 680 Z"
+        fill="#04100e"/>
+  <path d="M0 596 C130 556 214 610 326 584 C438 558 476 614 596 592 C706 572 766 616 886 596 C986 580 1082 612 1200 588"
+        fill="none" stroke="#0f3d35" stroke-width="2"/>
+
+  <!-- 房子 -->
+  <g transform="translate(380 218)">
+    <ellipse cx="180" cy="360" rx="250" ry="160" fill="url(#lamp)" filter="url(#soft)"/>
+
+    <!-- 屋身 -->
+    <path d="M60 190 L60 350 L320 350 L320 190 Z" fill="#0a201c" stroke="#2f7566" stroke-width="2"/>
+    <!-- 横板细节 -->
+    <g stroke="#17453c" stroke-width="1">
+      <path d="M60 250 H320 M60 300 H320"/>
+    </g>
+    <!-- 屋顶 -->
+    <path d="M40 195 L190 92 L340 195 Z" fill="#0d2924" stroke="#2f7566" stroke-width="2"/>
+    <path d="M40 195 L190 92 L340 195" fill="none" stroke="#2f7566" stroke-width="2"/>
+    <rect x="255" y="126" width="28" height="50" fill="#0d2924" stroke="#2f7566" stroke-width="2"/>
+
+    <!-- 亮着的窗 -->
+    <g>
+      <rect x="94" y="228" width="76" height="70" rx="3" fill="#e9c98d" opacity="0.95" filter="url(#tiny)"/>
+      <rect x="94" y="228" width="76" height="70" rx="3" fill="#e9c98d" opacity="0.9"/>
+      <rect x="94" y="228" width="76" height="70" rx="3" fill="none" stroke="#0a201c" stroke-width="4"/>
+      <line x1="132" y1="228" x2="132" y2="298" stroke="#0a201c" stroke-width="4"/>
+      <line x1="94" y1="263" x2="170" y2="263" stroke="#0a201c" stroke-width="4"/>
+    </g>
+    <g opacity="0.5">
+      <rect x="232" y="242" width="56" height="50" rx="2" fill="#e9c98d"/>
+      <rect x="232" y="242" width="56" height="50" rx="2" fill="none" stroke="#0a201c" stroke-width="4"/>
+      <line x1="260" y1="242" x2="260" y2="292" stroke="#0a201c" stroke-width="4"/>
+    </g>
+    <!-- 门 -->
+    <rect x="136" y="308" width="52" height="42" fill="#04100e" stroke="#2f7566" stroke-width="2"/>
+    <circle cx="178" cy="330" r="2.5" fill="#e9c98d"/>
+
+    <!-- 窗光落地 -->
+    <path d="M76 350 L196 350 L172 400 L100 400 Z" fill="#e9c98d" opacity="0.10"/>
+  </g>
+
+  <!-- 海草 -->
+  <g stroke="#2f7566" stroke-width="3" fill="none" opacity="0.75" stroke-linecap="round">
+    <path d="M180 660 C170 620 196 596 186 560 C176 524 200 500 192 470"/>
+    <path d="M212 668 C222 630 200 610 214 582 C228 554 208 534 218 512"/>
+    <path d="M980 664 C970 626 994 602 984 570 C974 538 996 518 988 492"/>
+    <path d="M1012 672 C1022 636 1000 616 1014 590 C1028 564 1010 546 1018 526"/>
+  </g>
+
+  <!-- 气泡 -->
+  <g fill="none" stroke="#6fe3c4" stroke-width="1.2" opacity="0.5">
+    <circle cx="470" cy="500" r="4"/>
+    <circle cx="486" cy="452" r="2.5"/>
+    <circle cx="462" cy="410" r="3.5"/>
+    <circle cx="500" cy="360" r="2"/>
+    <circle cx="480" cy="316" r="3"/>
+  </g>
+
+  <!-- 微粒 -->
+  <g fill="#8fb3a9" opacity="0.3">
+    <circle cx="140" cy="420" r="1.6"/><circle cx="260" cy="500" r="1.2"/><circle cx="880" cy="450" r="1.6"/>
+    <circle cx="960" cy="380" r="1.2"/><circle cx="1120" cy="520" r="1.8"/><circle cx="380" cy="250" r="1.3"/>
+    <circle cx="1010" cy="240" r="1.4"/><circle cx="200" cy="300" r="1.1"/>
+  </g>
+
+  <text x="60" y="640" fill="#8fb3a9" font-family="ui-monospace, monospace" font-size="13" letter-spacing="3">
+    DEPTH −4 000 m · 灯还亮着
+  </text>
+</svg>

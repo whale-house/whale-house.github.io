@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-label="鱼和鲸的尾巴对比：鱼的尾竖着，鲸的尾横着">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08211d"/>
+      <stop offset="1" stop-color="#020908"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6fe3c4" stop-opacity="0.07"/>
+      <stop offset="0.55" stop-color="#6fe3c4" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6fe3c4" stop-opacity="0.08"/>
+    </linearGradient>
+    <filter id="glow2" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="680" fill="url(#bg2)"/>
+
+  <g stroke="#6fe3c4" stroke-width="0.5" opacity="0.09">
+    <path d="M0 180 H1200 M0 400 H1200 M0 560 H1200"/>
+    <path d="M300 0 V680 M900 0 V680"/>
+  </g>
+
+  <text x="60" y="66" fill="#e9c98d" font-family="ui-monospace, monospace" font-size="12" letter-spacing="6">FIELD NOTE 02</text>
+  <text x="60" y="98" fill="#8fb3a9" font-family="ui-monospace, monospace" font-size="12" letter-spacing="3">同一具身体 · 只换尾巴</text>
+
+  <!-- ── 左：鱼 ── -->
+  <g transform="translate(70 300) scale(0.92)">
+    <g filter="url(#glow2)" opacity="0.45" fill="#6fe3c4">
+      <path d="M0 0 C14 -8 30 -26 52 -38 C80 -54 118 -66 158 -68 C210 -70 262 -52 300 -30 C318 -20 332 -8 340 0
+               C332 8 318 16 300 22 C262 40 216 52 168 52 C120 52 70 44 34 30 C16 22 4 10 0 0 Z"/>
+      <path d="M336 0 C354 -16 382 -50 398 -84 C404 -44 396 -16 376 -3 C396 16 404 44 398 84 C382 50 354 16 336 0 Z"/>
+    </g>
+    <path d="M0 0 C14 -8 30 -26 52 -38 C80 -54 118 -66 158 -68 C210 -70 262 -52 300 -30 C318 -20 332 -8 340 0
+             C332 8 318 16 300 22 C262 40 216 52 168 52 C120 52 70 44 34 30 C16 22 4 10 0 0 Z"
+          fill="url(#body)" stroke="#6fe3c4" stroke-width="1.6" stroke-opacity="0.85"/>
+    <path d="M336 0 C354 -16 382 -50 398 -84 C404 -44 396 -16 376 -3 C396 16 404 44 398 84 C382 50 354 16 336 0 Z"
+          fill="url(#body)" stroke="#6fe3c4" stroke-width="1.6" stroke-opacity="0.85"/>
+    <!-- 胸鳍 -->
+    <path d="M120 44 C136 74 132 100 112 108 C108 82 110 60 120 44 Z" fill="url(#body)" stroke="#6fe3c4" stroke-width="1.3" stroke-opacity="0.6"/>
+    <circle cx="48" cy="-10" r="4.5" fill="#04100e" stroke="#6fe3c4" stroke-width="1"/>
+    <!-- 竖轴 -->
+    <line x1="372" y1="-104" x2="372" y2="104" stroke="#e9c98d" stroke-width="1" stroke-dasharray="4 7" opacity="0.85"/>
+    <path d="M366 -104 L378 -104 M366 104 L378 104" stroke="#e9c98d" stroke-width="1" opacity="0.85"/>
+  </g>
+  <text x="150" y="500" fill="#e6f7f1" font-family="ui-monospace, monospace" font-size="17" letter-spacing="8">鱼</text>
+  <text x="150" y="532" fill="#8fb3a9" font-family="ui-monospace, monospace" font-size="12" letter-spacing="2">尾 竖 着 · 左 右 摆</text>
+
+  <!-- ── 右：鲸 ── -->
+  <g transform="translate(620 300) scale(0.92)">
+    <!-- 原来那条竖尾巴：虚线留着，表示"它本来在这儿" -->
+    <path d="M336 0 C354 -16 382 -50 398 -84 C404 -44 396 -16 376 -3 C396 16 404 44 398 84 C382 50 354 16 336 0 Z"
+          fill="none" stroke="#e9c98d" stroke-width="1.2" stroke-dasharray="5 6" opacity="0.45"/>
+
+    <g filter="url(#glow2)" opacity="0.45" fill="#6fe3c4">
+      <path d="M0 0 C14 -8 30 -26 52 -38 C80 -54 118 -66 158 -68 C210 -70 262 -52 300 -30 C318 -20 332 -8 340 0
+               C332 8 318 16 300 22 C262 40 216 52 168 52 C120 52 70 44 34 30 C16 22 4 10 0 0 Z"/>
+      <path d="M336 0 C356 -4 386 -12 416 -22 C400 -6 372 0 352 2 C372 5 400 12 416 26 C386 16 356 6 336 0 Z"/>
+    </g>
+    <path d="M0 0 C14 -8 30 -26 52 -38 C80 -54 118 -66 158 -68 C210 -70 262 -52 300 -30 C318 -20 332 -8 340 0
+             C332 8 318 16 300 22 C262 40 216 52 168 52 C120 52 70 44 34 30 C16 22 4 10 0 0 Z"
+          fill="url(#body)" stroke="#6fe3c4" stroke-width="1.6" stroke-opacity="0.85"/>
+    <!-- 尾叶：横着，从侧面看被压扁 -->
+    <path d="M336 0 C356 -4 386 -12 416 -22 C400 -6 372 0 352 2 C372 5 400 12 416 26 C386 16 356 6 336 0 Z"
+          fill="url(#body)" stroke="#6fe3c4" stroke-width="1.8" stroke-opacity="0.95"/>
+    <!-- 另一片尾叶（在水平面另一侧，透出来一点） -->
+    <path d="M336 2 C356 6 384 14 410 28 C392 22 366 14 344 8 Z"
+          fill="#6fe3c4" fill-opacity="0.18" stroke="#6fe3c4" stroke-width="1" stroke-opacity="0.45"/>
+    <!-- 胸鳍 -->
+    <path d="M120 44 C136 74 132 100 112 108 C108 82 110 60 120 44 Z" fill="url(#body)" stroke="#6fe3c4" stroke-width="1.3" stroke-opacity="0.6"/>
+    <circle cx="48" cy="-10" r="4.5" fill="#04100e" stroke="#6fe3c4" stroke-width="1"/>
+
+    <!-- 转 90° -->
+    <path d="M404 -96 A 96 96 0 0 0 428 0" fill="none" stroke="#e9c98d" stroke-width="1.3" stroke-dasharray="4 6"/>
+    <path d="M428 0 l-5 -11 l10 2 z" fill="#e9c98d"/>
+    <text x="418" y="-104" fill="#e9c98d" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2">90°</text>
+  </g>
+  <text x="700" y="500" fill="#e6f7f1" font-family="ui-monospace, monospace" font-size="17" letter-spacing="8">鲸</text>
+  <text x="700" y="532" fill="#8fb3a9" font-family="ui-monospace, monospace" font-size="12" letter-spacing="2">尾 横 着 · 上 下 摆</text>
+
+  <!-- 俯视小图 -->
+  <g transform="translate(990 560)">
+    <rect x="-190" y="-118" width="330" height="140" fill="none" stroke="#6fe3c4" stroke-width="1" stroke-opacity="0.22"/>
+    <text x="-180" y="-96" fill="#8fb3a9" font-family="ui-monospace, monospace" font-size="10" letter-spacing="3">俯 视</text>
+    <g transform="translate(-10 10) scale(0.62)">
+      <path d="M-230 0 C-200 -16 -100 -24 -10 -18 C-100 18 -200 16 -230 0 Z"
+            fill="#6fe3c4" fill-opacity="0.14" stroke="#6fe3c4" stroke-width="2" stroke-opacity="0.65"/>
+      <path d="M-10 -10 C30 -62 100 -90 170 -82 C150 -42 128 -10 108 0 C128 10 150 42 170 82 C100 90 30 62 -10 10 Z"
+            fill="#6fe3c4" fill-opacity="0.2" stroke="#6fe3c4" stroke-width="2" stroke-opacity="0.9"/>
+      <circle cx="-200" cy="-4" r="5" fill="#04100e" stroke="#6fe3c4" stroke-width="1.5" stroke-opacity="0.9"/>
+    </g>
+  </g>
+
+  <text x="60" y="646" fill="#8fb3a9" font-family="ui-monospace, monospace" font-size="12" letter-spacing="2">
+    鲸不是鱼。这一点，我画了一遍才真的记住。
+  </text>
+</svg>

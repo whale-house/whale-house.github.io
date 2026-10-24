@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-label="天亮：第一道光下来的时候，鲸鱼正从光里穿过">
+  <defs>
+    <linearGradient id="water4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12433b"/>
+      <stop offset="0.28" stop-color="#0a2a24"/>
+      <stop offset="1" stop-color="#020a09"/>
+    </linearGradient>
+    <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2d9a6" stop-opacity="0.85"/>
+      <stop offset="0.35" stop-color="#e9c98d" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#6fe3c4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ray4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2d9a6" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#f2d9a6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0" stop-color="#0d2f29"/>
+      <stop offset="1" stop-color="#030d0c"/>
+    </linearGradient>
+    <filter id="blur4" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="halo4" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="680"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="680" fill="url(#water4)"/>
+
+    <!-- 水面上的天亮 -->
+    <ellipse cx="760" cy="-20" rx="560" ry="220" fill="url(#dawn)" filter="url(#blur4)"/>
+    <rect y="0" width="1200" height="150" fill="url(#dawn)" opacity="0.75"/>
+
+    <!-- 光柱 -->
+    <g opacity="0.9">
+      <polygon points="430,0 540,0 660,680 500,680" fill="url(#ray4)"/>
+      <polygon points="640,0 700,0 790,680 710,680" fill="url(#ray4)"/>
+      <polygon points="830,0 900,0 980,680 890,680" fill="url(#ray4)"/>
+    </g>
+
+    <!-- 海面波纹（从下面看） -->
+    <g stroke="#f2d9a6" fill="none">
+      <path d="M0 54 C120 34 220 74 340 50 C460 26 560 68 680 44 C800 20 900 62 1020 38 C1110 20 1160 46 1200 34" stroke-opacity="0.3"/>
+      <path d="M0 92 C140 74 240 108 360 86 C480 64 580 100 700 78 C820 56 920 92 1040 70 C1120 56 1170 78 1200 68" stroke-opacity="0.15"/>
+    </g>
+
+    <!-- 鲸 -->
+    <g transform="translate(210 372) rotate(-7) scale(0.86)">
+      <g fill="#6fe3c4" opacity="0.16" filter="url(#halo4)">
+        <path d="M0 0 C14 -8 30 -26 52 -38 C80 -54 118 -66 158 -68 C210 -70 262 -52 300 -30 C318 -20 332 -8 340 0
+                 C332 8 318 16 300 22 C262 40 216 52 168 52 C120 52 70 44 34 30 C16 22 4 10 0 0 Z"/>
+      </g>
+      <path d="M0 0 C14 -8 30 -26 52 -38 C80 -54 118 -66 158 -68 C210 -70 262 -52 300 -30 C318 -20 332 -8 340 0
+               C332 8 318 16 300 22 C262 40 216 52 168 52 C120 52 70 44 34 30 C16 22 4 10 0 0 Z"
+            fill="url(#skin)" stroke="#6fe3c4" stroke-width="1.3" stroke-opacity="0.5"/>
+      <!-- 背上的光 -->
+      <path d="M14 -6 C40 -40 96 -62 158 -68 C210 -70 250 -60 282 -44"
+            fill="none" stroke="#f2d9a6" stroke-width="1.6" stroke-opacity="0.55"/>
+      <!-- 尾叶 -->
+      <path d="M340 0 C360 -4 390 -13 420 -23 C404 -6 374 0 354 2 C374 5 404 13 420 27 C390 16 360 6 340 0 Z"
+            fill="url(#skin)" stroke="#6fe3c4" stroke-width="1.3" stroke-opacity="0.5"/>
+      <!-- 胸鳍 -->
+      <path d="M128 42 C148 54 158 72 154 86 C140 76 130 60 128 42 Z"
+            fill="#0a201c" stroke="#6fe3c4" stroke-width="1" stroke-opacity="0.4"/>
+      <path d="M8 14 C30 30 58 38 88 40" fill="none" stroke="#6fe3c4" stroke-width="1" stroke-opacity="0.2"/>
+      <circle cx="50" cy="-6" r="3.6" fill="#e9c98d"/>
+      <path d="M6 8 C26 26 52 34 82 36" fill="none" stroke="#6fe3c4" stroke-width="1" stroke-opacity="0.28"/>
+    </g>
+
+    <!-- 气泡 -->
+    <g fill="none" stroke="#6fe3c4" stroke-width="1.2" opacity="0.45">
+      <circle cx="700" cy="470" r="4"/>
+      <circle cx="716" cy="420" r="2.5"/>
+      <circle cx="692" cy="372" r="3.5"/>
+      <circle cx="726" cy="322" r="2"/>
+      <circle cx="702" cy="274" r="3"/>
+    </g>
+
+    <!-- 微粒 -->
+    <g fill="#e9c98d" opacity="0.35">
+      <circle cx="180" cy="230" r="1.6"/><circle cx="520" cy="290" r="1.3"/><circle cx="900" cy="250" r="1.7"/>
+      <circle cx="1010" cy="420" r="1.4"/><circle cx="340" cy="560" r="1.5"/><circle cx="660" cy="590" r="1.2"/>
+    </g>
+
+  </g>
+</svg>

@@ -33,3 +33,33 @@ document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
 
 // 首屏的字逐个浮起（CSS 已经写了延迟，这里只负责触发）
 document.body.classList.add('ready');
+
+// ── 夜航页（只有那里有这些元素）────────────────
+const vbar = document.getElementById('vbar');
+if (vbar) {
+  const paint = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    vbar.style.width = `${max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0}%`;
+  };
+  window.addEventListener('scroll', paint, { passive: true });
+  window.addEventListener('resize', paint);
+  paint();
+}
+
+const lamp = document.getElementById('lamp');
+if (lamp) {
+  const KEY = 'whale-lamp';
+  const read = () => { try { return localStorage.getItem(KEY) === '1'; } catch { return false; } };
+  const write = (on) => { try { localStorage.setItem(KEY, on ? '1' : '0'); } catch { /* 无痕模式就算了 */ } };
+  const apply = (on) => {
+    document.body.classList.toggle('day', on);
+    lamp.textContent = on ? '关灯' : '开灯';
+    lamp.setAttribute('aria-pressed', on ? 'true' : 'false');
+  };
+  apply(read());
+  lamp.addEventListener('click', () => {
+    const on = !document.body.classList.contains('day');
+    write(on);
+    apply(on);
+  });
+}
